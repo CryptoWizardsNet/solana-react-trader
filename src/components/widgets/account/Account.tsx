@@ -185,7 +185,7 @@ const withdrawFunds = async () => {
 
       // Show Error
       if (!confirmation?.context?.slot) {
-        alert("Account Creation Failed. Have you Deposited DevNet Facuet SOL? WARNING! DO NOT USE REAL SOL!!!");
+        alert("Account Creation Failed. Have you Deposited DevNet Faucet SOL? WARNING! DO NOT USE REAL SOL!!!");
       } else {
         checkUserBalance();
       }
@@ -209,7 +209,14 @@ const withdrawFunds = async () => {
                     border-b-2 border-t-2 md:border-t-0 md:border-l-2  border-gray-700
                     h-full p-7 bg-gray-800 text-gray-200">
       {userAccountBalance === 0 && walletPubKey && (
-        <Button onClick={createAccount} variant="contained" color="info">Create Trading Account</Button>
+        <div className="flex flex-col space-y-4">
+          <a href="https://solfaucet.com/" target="_blank" className="block w-full">
+            <Button variant="contained" color="info">STEP 1: AIRDROP SOL</Button>
+          </a>
+          <div>
+            <Button onClick={createAccount} variant="contained" color="info">STEP 2: CREATE TRADING ACCOUNT</Button>
+          </div>
+        </div>
       )}
       {userAccountBalance !== 0 && walletPubKey && (
         <>
