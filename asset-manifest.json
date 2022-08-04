@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/solana-react-trader/static/css/main.db960daf.css",
-    "main.js": "/solana-react-trader/static/js/main.3a246e48.js",
+    "main.js": "/solana-react-trader/static/js/main.0b8c898f.js",
     "static/js/787.62febb9d.chunk.js": "/solana-react-trader/static/js/787.62febb9d.chunk.js",
     "index.html": "/solana-react-trader/index.html",
     "main.db960daf.css.map": "/solana-react-trader/static/css/main.db960daf.css.map",
-    "main.3a246e48.js.map": "/solana-react-trader/static/js/main.3a246e48.js.map",
+    "main.0b8c898f.js.map": "/solana-react-trader/static/js/main.0b8c898f.js.map",
     "787.62febb9d.chunk.js.map": "/solana-react-trader/static/js/787.62febb9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db960daf.css",
-    "static/js/main.3a246e48.js"
+    "static/js/main.0b8c898f.js"
   ]
 }
