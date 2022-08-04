@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 
-const buttons = ["OPEN ORDERS", "IN PLAY", "TO CLAIM", "CLAIMED"];
+const buttons = ["ORDER BOOK", "OPEN ORDERS", "IN PLAY", "TO CLAIM", "CLAIMED", "ABOUT"];
 
 type Props = {
   page: String,
