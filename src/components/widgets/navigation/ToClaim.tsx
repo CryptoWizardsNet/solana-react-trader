@@ -34,19 +34,21 @@ function ToClaim({ toClaim, price, userAccount, walletPubKey, connection, provid
   }
 
   const checkWinning = (direction: number, isMaker: boolean, currentPrice: number, benchPrice: number) => {
+
+    const benchPriceNumber = Number(benchPrice) / 100000000
    
-      if (direction === 0 && currentPrice > benchPrice) {
-        return "Maker"
-      }
-      if (direction === 0 && currentPrice < benchPrice) {
-        return "Taker"
-      }
-      if (direction === 1 && currentPrice > benchPrice) {
-        return "Taker"
-      }
-      if (direction === 1 && currentPrice < benchPrice) {
-        return "Maker"
-      }
+    if (direction === 0 && currentPrice > benchPriceNumber) {
+      return "Maker"
+    }
+    if (direction === 0 && currentPrice < benchPriceNumber) {
+      return "Taker"
+    }
+    if (direction === 1 && currentPrice > benchPriceNumber) {
+      return "Taker"
+    }
+    if (direction === 1 && currentPrice < benchPriceNumber) {
+      return "Maker"
+    }
     
   }
 

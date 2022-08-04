@@ -14,18 +14,20 @@ function InPlay({ inPlay, price, userAccount }: Props) {
 
   const checkWinning = (direction: number, isMaker: boolean, currentPrice: number, benchPrice: number) => {
    
-      if (direction === 0 && currentPrice > benchPrice) {
-        return "Maker"
-      }
-      if (direction === 0 && currentPrice < benchPrice) {
-        return "Taker"
-      }
-      if (direction === 1 && currentPrice > benchPrice) {
-        return "Taker"
-      }
-      if (direction === 1 && currentPrice < benchPrice) {
-        return "Maker"
-      }
+    const benchPriceNumber = Number(benchPrice) / 100000000
+   
+    if (direction === 0 && currentPrice > benchPriceNumber) {
+      return "Maker"
+    }
+    if (direction === 0 && currentPrice < benchPriceNumber) {
+      return "Taker"
+    }
+    if (direction === 1 && currentPrice > benchPriceNumber) {
+      return "Taker"
+    }
+    if (direction === 1 && currentPrice < benchPriceNumber) {
+      return "Maker"
+    }
     
   }
 
