@@ -118,15 +118,6 @@ function OpenOrders({ openOrders, price, userAccount, walletPubKey, connection, 
                 </div>
               </div>
             );
-          } else {
-            return (
-              <div>
-                <p>You currently have no open orders pending a Taker.</p>
-                <p>
-                  <b>Create a new order</b>. If a Taker matches your order, it will then show as being in-play.
-                </p>
-              </div>
-            )
           }
         })}
       </div>

@@ -202,16 +202,6 @@ function ToClaim({ toClaim, price, userAccount, walletPubKey, connection, provid
                 </div>
               </div>
             );
-          } else {
-            <div>
-              <p>You currently do not have any trades that can be closed out and redemmed.</p>
-              <p>
-                Either party can redeem a trade. The profit will always go to the winner based on the Chainlink provided
-                SOL / USD price at the time of redeeming. If a trader fails to redeem, the price the moves against them and the 
-                counterparty then redeems at a favourable price, the counterparty will receive the profit. However, if the price remains
-                favourable for the trader in question, they will receive the profit.
-              </p>
-            </div>
           }
         })}
       </>

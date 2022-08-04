@@ -172,16 +172,6 @@ function InPlay({ inPlay, price, userAccount }: Props) {
                 </div>
               </div>
             );
-          } else {
-            return (
-              <div>
-                <p>You currently do not have any trades in-play.</p>
-                <p>
-                  To have an in-play trade, you must either be the Taker of an open trade or make an 
-                  open trade to be taken by someone else (or yourself if closing an open trade).
-                </p>
-              </div>
-            )
           }
         })}
       </>
